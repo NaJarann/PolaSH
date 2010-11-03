@@ -16,15 +16,15 @@ void polash()
 		else
 		{
 			
-			char **s_cmd_line = split_cmd_line(buff, real_size, ' ');
-			char *cmd_path = get_cmd_path(s_cmd_line[0]);
+			char *cmd_name = split_cmd_line(buff, real_size, ' ');
+			char *cmd_path = get_cmd_path(cmd_name);
 			if(cmd_path != NULL)
 			{
 				exec_cmd(cmd_path,buff);
 			}
 			else
 			{
-				printf("la commande %s n'existe pas\n",s_cmd_line[0]);
+				printf("la commande %s n'existe pas\n",cmd_name);
 			}
 			polapars(buff, real_size);
 		}

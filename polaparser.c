@@ -3,11 +3,11 @@
 char **split_cmd_line(char *cmd_line, int size_line, char separator)
 {
 	char **splited_line;
-	int n_args=nb_separators(cmd_line, size_line, separator)+2;
+	int nb_args=nb_separators(cmd_line, size_line, separator)+2;
 	//la derniere valeur sera mise à NULL pour l'utilisation de execvp
 	int i,j,pos=0;
 	
-	splited_line=malloc(n_args*sizeof(char*));
+	splited_line=malloc(nb_args*sizeof(char*));
 	
 	for(i=0;i<nb_args-1;i++)
 	{
