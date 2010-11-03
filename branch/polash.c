@@ -16,7 +16,7 @@ void polash()
 		else
 		{
 			
-			char *cmd_name = split_cmd_line(buff, real_size, ' ');
+			char *cmd_name = get_cmd_name(buff, real_size, ' ');
 			char *cmd_path = get_cmd_path(cmd_name);
 			if(cmd_path != NULL)
 			{

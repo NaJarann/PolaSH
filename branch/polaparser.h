@@ -23,5 +23,14 @@ void polai(char *cmd_line, int size_line);
 Fonction d'appel interactif pola-i
 Non commencée
 */
-
+char **split_cmd_line(char *cmd_line, int size_line, char separator);
+/*
+ * Sépare la chaine de caractère "cmd_line" de taille "size_line" en n
+ * sous-chaines délimitées par "separator".
+*/
+int nb_separators(char *cmd_line, int size_line, char separator);
+/*
+ * Compte le nombre d'occurrences du caractère "separator" dans la chaine de
+ * caractère "cmd_line" de longueur "size_line"
+*/
 #endif
