@@ -2,7 +2,7 @@
 
 int main()
 {
-	polash();
-	
-	return 0;
+    polash();
+
+    return 0;
 }
